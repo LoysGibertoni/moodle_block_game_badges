@@ -36,6 +36,9 @@ class block_game_badges_edit_form extends block_edit_form {
 			$mform->addElement('text', 'config_title', get_string('configpage_titletext', 'block_game_badges'));
 			$mform->setType('config_title', PARAM_TEXT);
 
+            $url = new moodle_url('/badges/newbadge.php', array('type' => BADGE_TYPE_COURSE, 'id' => $COURSE->id));
+            $mform->addElement('html', html_writer::link($url, 'Adicionar emblema'));
+
         }
 
     }
