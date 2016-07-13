@@ -15,16 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Badges block version definition.
+ * Version details
  *
- * @package    block_game_badges
- * @copyright  2016 Loys Henrique Saccomano Gibertoni
+ * @package    block_badges
+ * @copyright  2012 onwards Totara Learning Solutions Ltd {@link http://www.totaralms.com/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author     Yuliya Bozhko <yuliya.bozhko@totaralms.com>
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2016052700;
-$plugin->requires  = 2011120511;
-$plugin->release   = 'Version for Moodle 2.9 onwards';
-$plugin->component = 'block_game_badges';
+$plugin->version   = 2015051100;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2015050500;        // Requires this Moodle version.
+$plugin->component = 'block_badges';

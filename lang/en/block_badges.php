@@ -15,18 +15,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Badges block potuguese language translation.
+ * Language file for block "badges"
  *
- * @package    block_game_badges
- * @copyright  2016 Loys Henrique Saccomano Gibertoni
+ * @package    block_badges
+ * @copyright  2012 onwards Totara Learning Solutions Ltd {@link http://www.totaralms.com/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author     Yuliya Bozhko <yuliya.bozhko@totaralms.com>
  */
 
-$string['pluginname'] = 'Bloco emblemas';
-$string['game_badges'] = 'Bloco emblemas';
-$string['game_badges:addinstance'] = 'Adiciona um novo bloco emblemas';
-$string['game_badges:myaddinstance'] = 'Adiciona um novo bloco emblemas à página Meu Moodle';
-$string['title'] = 'Emblemas';
+$string['pluginname'] = 'Latest badges';
+$string['numbadgestodisplay'] = 'Number of latest badges to display';
+$string['nothingtodisplay'] = 'You have no badges to display';
+$string['badges:addinstance'] = 'Add a new My latest badges block';
+$string['badges:myaddinstance'] = 'Add a new My latest badges block to Dashboard';
 
-$string['configpage_header'] = 'Edição de emblemas';
-$string['configpage_titletext'] = 'Título do bloco';
+$string['mybadges'] = 'My badges:';
+$string['badgesicanearn'] = 'Badges I can earn:';

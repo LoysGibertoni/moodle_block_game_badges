@@ -15,32 +15,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Badges block edit form definition.
+ * Form for editing badges block instances.
  *
- * @package    block_game_badges
- * @copyright  20016 Loys Henrique Saccomano Gibertoni
+ * @package    block_badges
+ * @copyright  2012 onwards Totara Learning Solutions Ltd {@link http://www.totaralms.com/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author     Yuliya Bozhko <yuliya.bozhko@totaralms.com>
  */
 
-class block_game_badges_edit_form extends block_edit_form {
-
+class block_badges_edit_form extends block_edit_form {
     protected function specific_definition($mform) {
+        $mform->addElement('header', 'configheader', get_string('blocksettings', 'block'));
 
-        global $COURSE;
-
-        $context = context_course::instance($COURSE->id);
-		if(has_capability('block/game_badges:managebadges', $context)) {
-
-			$mform->addElement('header', 'configheader', get_string('configpage_header', 'block_game_badges'));
-			
-			$mform->addElement('text', 'config_title', get_string('configpage_titletext', 'block_game_badges'));
-			$mform->setType('config_title', PARAM_TEXT);
-
-            $url = new moodle_url('/badges/newbadge.php', array('type' => BADGE_TYPE_COURSE, 'id' => $COURSE->id));
-            $mform->addElement('html', html_writer::link($url, 'Adicionar emblema'));
-
+        $numberofbadges = array('0' => get_string('all'));
+        for ($i = 1; $i <= 20; $i++) {
+            $numberofbadges[$i] = $i;
         }
 
+        $mform->addElement('select', 'config_numberofbadges', get_string('numbadgestodisplay', 'block_badges'), $numberofbadges);
+        $mform->setDefault('config_numberofbadges', 10);
     }
-
 }

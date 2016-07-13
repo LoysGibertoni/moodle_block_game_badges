@@ -15,18 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Badges block potuguese language translation.
+ * Language file for block "badges"
  *
- * @package    block_game_badges
- * @copyright  2016 Loys Henrique Saccomano Gibertoni
+ * @package    block_badges
+ * @copyright  2012 onwards Totara Learning Solutions Ltd {@link http://www.totaralms.com/}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @author     Yuliya Bozhko <yuliya.bozhko@totaralms.com>
  */
 
-$string['pluginname'] = 'Bloco emblemas';
-$string['game_badges'] = 'Bloco emblemas';
-$string['game_badges:addinstance'] = 'Adiciona um novo bloco emblemas';
-$string['game_badges:myaddinstance'] = 'Adiciona um novo bloco emblemas à página Meu Moodle';
-$string['title'] = 'Emblemas';
-
-$string['configpage_header'] = 'Edição de emblemas';
-$string['configpage_titletext'] = 'Título do bloco';
+$string['mybadges'] = 'Meus emblemas:';
+$string['badgesicanearn'] = 'Emblemas que posso ganhar:';
