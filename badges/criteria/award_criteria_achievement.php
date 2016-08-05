@@ -104,8 +104,6 @@ class award_criteria_achievement extends award_criteria {
         $achievements = $DB->get_records('achievements', array('deleted' => 0), 'id');
         $aids = array_keys($achievements);
 
-        print_object($aids);
-
         if ($this->id !== 0) {
             $existing = array_keys($this->params);
             $missing = array_diff($existing, $aids);
